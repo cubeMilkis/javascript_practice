@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathon</title>
+</head>
+<body>
+    <h1>Race Registration!</h1>
+    <form action="/racereg">
+        <!-- Name -->
+        <div>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" required maxlength="20">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" required maxlength="20">
+        </div>
+        <!-- Race Selection -->
+        <div>
+            <p>Select a Race:</p>
+            <div>
+                <input type="radio" name="rsel" id="funrun" value="funrun">
+                <label for="funrun">Fun Run 5k</label>
+            </div>
+            <div>
+                <input type="radio" name="rsel" id="half" value="half">
+                <label for="half">Half Marathon</label>
+            </div>
+            <div>
+                <input type="radio" name="rsel" id="full" value="full">
+                <label for="full">Full Marathon</label>
+            </div>
+        </div>
+        <!-- Email + Password -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+        </div>
+        <!-- Age Selection -->
+        <div>
+            Select Age Group:
+            <select name="agegrp" id="agegrp">
+                <option value="kids">Under 18</option>
+                <option value="ya">18-30</option>
+                <option value="adults">31-50</option>
+                <option value="seniors">Above 50</option>
+            </select>
+        </div>
+        <!-- Reg Btn -->
+        <button>Register!</button>
+    </form>
+</body>
+</html>

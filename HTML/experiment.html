@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Rainbow</title>
+    <!--LEAVE THESE LINES ALONE, PLEASE! THEY MAKE THE LIVE PREVIEW WORK!-->
+
+</head>
+
+<body>
+    <!--DON'T TOUCH THIS FILE PLEASE!-->
+    <h1>
+        <span>R</span>
+        <span>A</span>
+        <span>I</span>
+        <span>N</span>
+        <span>B</span>
+        <span>O</span>
+        <span>W</span>
+    </h1>
+    <script>
+        const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']; //PLEASE DON'T CHANGE THIS LINE!
+    //YOU CODE GOES HERE:
+        const heading = document.querySelectorAll(`span`);
+        for(let i = 0; i < colors.length; i++){
+            heading[i].style.color = colors[i];
+        }
+    </script>
+</body>

@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    width: 80%;
+    margin: 0 10%;
+    padding: 0;
+    background-color: ivory;
+}
+
+.pokeBox {
+    width: 20%;
+    height: 8rem;
+    text-align: center;
+    line-height: 100%;
+}

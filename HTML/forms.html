@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="/account">
+        <!-- Username text -->
+        <div>
+            <label for="username">Enter Username</label>
+            <input type="text" placeholder="Username" id="username">
+        </div>
+        <div>
+        <!-- Password -->
+            <label for="password">Enter Password</label>
+            <input type="password" placeholder="Password" id="password" name="password">
+        </div>
+        <div>
+        <!-- Color -->
+            <label for="color">Choose Color</label>
+            <input type="color" id="color">
+        </div>
+        <div>
+        <!-- Number -->
+        <div>
+            <label for="num">Enter Number</label>
+            <input type="number" id="num" name="number" min="1" max="1000">
+        </div>
+        <!-- Checkbox-->
+            <label for="scales">Scales</label>
+            <input type="checkbox" id="scales" name="scales">
+        </div>
+        <div>
+            <label for="horns">Horns</label>
+            <input type="checkbox" id="horns" name="horns">
+        </div>
+        <div>
+        <!-- Radio -->
+        <div>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">S:</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M:</label>
+            <input type="radio" name="size" id="m" value="m">
+        </div>
+        <div>
+            <label for="sensitivity">Range</label>
+            <input type="range" min="1" max="100" id="sensitivity" name="range">
+        </div>
+        <!-- Select -->
+        <div>
+            <label for="pet_select">Choose pet</label>
+            <select name="pets" id="pet_select">
+                <option value=" ">--Please choose pet--</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="pig">Pig</option>
+                <option value="cow">Cow</option>
+            </select>
+        <!-- Submit -->
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+    <!-- Validations -->
+    <h2>Validations</h2>
+    <form action="/valid">
+        <!-- First Name -->
+        <label for="name">Enter First Name</label>
+        <input type="text" id="name" required minlength="5" maxlength="20">
+        <!-- Username -->
+        <label for="username">Username</label>
+        <input type="text" id="username" required minlength="5" maxlength="10">
+        <!-- Email -->
+        <label for="email">Email Address</label>
+        <input type="email" id="email" required>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
